@@ -12,8 +12,6 @@ D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\Problem2
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.csprojAssemblyReference.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.AssemblyInfoInputs.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.AssemblyInfo.cs
-D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.csproj.CoreCompileInputs.cache
-D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.MvcApplicationPartsAssemblyInfo.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.RazorAssemblyInfo.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.RazorAssemblyInfo.cs
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.TagHelpers.input.cache
@@ -35,3 +33,15 @@ D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.pdb
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.genruntimeconfig.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.csproj.CopyComplete
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\libman.json
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Types.dll
+D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.csproj.CoreCompileInputs.cache
+D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.MvcApplicationPartsAssemblyInfo.cache
+D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.Properties.Resources.resources
+D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.csproj.GenerateResource.cache

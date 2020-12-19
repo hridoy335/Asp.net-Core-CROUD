@@ -3,6 +3,42 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">View data from databae</h1>  
+</div>
+
+<hr />
+<br />
+<div class="table table-secondary">
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Address</th>
+                <th>Employee Contact</th>
+                <th>Employee Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (Model != null)
+                {
+                    foreach (var i in Model)
+                    {
+                        <tr>
+                            <td>@i.EmpId</td>
+                            <td>@i.EmployeeName</td>
+                            <td>@i.EmployeeAddress</td>
+                            <td>@i.EmployeeContact</td>
+                            <td>@i.EmployeeEmail</td>
+                        </tr>
+                    }
+                }
+
+            }
+
+        </tbody>
+
+    </table>
+
 </div>
