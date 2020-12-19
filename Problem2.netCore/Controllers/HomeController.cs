@@ -15,7 +15,7 @@ namespace Problem2.netCore.Controllers
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
         SqlConnection con = new SqlConnection();
-        List<Employee> emp = new List<Employee>(); 
+        List<Employee> emp = new List<Employee>(); // create Employee class object
 
         private readonly ILogger<HomeController> _logger;
 
@@ -28,12 +28,14 @@ namespace Problem2.netCore.Controllers
 
         public IActionResult Index()
         {
-            Getdata();
-            return View(emp);
+            Getdata();// call Getdata method
+
+            return View(emp);// retuen emp object
         }
 
         private void Getdata()
         {
+            //  check emp object have any data or not
             if (emp.Count > 0)
             {
                 emp.Clear();
@@ -41,12 +43,13 @@ namespace Problem2.netCore.Controllers
 
             try
             {
-                con.Open();
+                con.Open(); // open connection
                 com.Connection = con;
                 com.CommandText = "SELECT [EmpId],[EmployeeName],[EmployeeAddress],[EmployeeContact],[EmployeeEmail] FROM [TestEmployeeDB].[dbo].[EmployeeTbl]";
-                dr = com.ExecuteReader();
+                dr = com.ExecuteReader(); // Execute code
                 while (dr.Read())
                 {
+                    // insert emp object data 
                     emp.Add(new Employee() {
                         EmpId=Convert.ToInt32(dr["EmpId"].ToString()),
                         EmployeeName=dr["EmployeeName"].ToString(),
