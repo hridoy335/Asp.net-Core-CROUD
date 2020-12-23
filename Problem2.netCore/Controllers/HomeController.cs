@@ -7,15 +7,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Problem2.netCore.Models;
 using System.Data.SqlClient;
+using Problem2.netCore.Properties;
 
 namespace Problem2.netCore.Controllers
 {
     public class HomeController : Controller
     {
+       // Properties.Resources.ConnectionString db = new Resources.ConnectionString();
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
         SqlConnection con = new SqlConnection();
         List<Employee> emp = new List<Employee>(); // create Employee class object
+        
 
         private readonly ILogger<HomeController> _logger;
 
@@ -67,6 +70,35 @@ namespace Problem2.netCore.Controllers
                 throw ex;
             }
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+           // employee.EmployeeName;
+            try
+            {
+                con.Open(); // open connection
+                com.Connection = con;
+                //com.CommandText = "SELECT [EmpId],[EmployeeName],[EmployeeAddress],[EmployeeContact],[EmployeeEmail] FROM [TestEmployeeDB].[dbo].[EmployeeTbl]";
+                com.CommandText = "insert into EmployeeTbl (EmployeeName,EmployeeAddress,EmployeeContact,EmployeeEmail) values('"+employee.EmployeeName+ "','"+employee.EmployeeAddress+"','" + employee.EmployeeContact + "','" + employee.EmployeeEmail +"')";
+                dr = com.ExecuteReader();
+                con.Close();
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                
+            }
+            return View(employee);
+        }
+
         public IActionResult Privacy()
         {
 
