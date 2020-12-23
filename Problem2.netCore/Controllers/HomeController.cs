@@ -98,6 +98,46 @@ namespace Problem2.netCore.Controllers
             }
             return View(employee);
         }
+        public IActionResult View() 
+        {
+            Getdata();
+            return View(emp);
+        }
+
+        public JsonResult Edit(int?id)
+        {
+            List<Employee> emp2=new List<Employee>();
+            try
+            {
+                con.Open();
+                com.Connection = con;
+                com.CommandText = "SELECT [EmpId],[EmployeeName],[EmployeeAddress],[EmployeeContact],[EmployeeEmail] FROM [TestEmployeeDB].[dbo].[EmployeeTbl] WHERE [EmpId]="+id+"";
+                //com.CommandText = "insert into EmployeeTbl (EmployeeName,EmployeeAddress,EmployeeContact,EmployeeEmail) values('" + employee.EmployeeName + "','" + employee.EmployeeAddress + "','" + employee.EmployeeContact + "','" + employee.EmployeeEmail + "')";
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    // insert emp object data 
+                    emp2.Add(new Employee()
+                    {
+                        EmpId = Convert.ToInt32(dr["EmpId"].ToString()),
+                        EmployeeName = dr["EmployeeName"].ToString(),
+                        EmployeeAddress = dr["EmployeeAddress"].ToString(),
+                        EmployeeContact = dr["EmployeeContact"].ToString(),
+                        EmployeeEmail = dr["EmployeeEmail"].ToString(),
+
+                    });
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                throw ex;
+            }
+            return Json(emp2);
+        }
+
 
         public IActionResult Privacy()
         {

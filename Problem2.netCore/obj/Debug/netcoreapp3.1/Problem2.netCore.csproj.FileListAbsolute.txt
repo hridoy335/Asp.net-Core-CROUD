@@ -160,3 +160,5 @@ D:\My Project\Problem2.netCore\Problem2.netCore\bin\Debug\netcoreapp3.1\zh-Hant\
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.csproj.CoreCompileInputs.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Problem2.netCore.MvcApplicationPartsAssemblyInfo.cache
 D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
+D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Razor\Views\Home\View.cshtml.g.cs
+D:\My Project\Problem2.netCore\Problem2.netCore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
