@@ -139,6 +139,32 @@ namespace Problem2.netCore.Controllers
         }
 
 
+        public IActionResult Delete(int?id)
+        {
+            try
+            {
+                con.Open();
+                com.Connection = con;
+                com.CommandText = "Delete from EmployeeTbl where EmpId="+id+"";
+                dr = com.ExecuteReader();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                throw ex;
+
+            }
+            return RedirectToAction("View");
+          
+        }
+
+        //public JsonResult deletefor(int?id)
+        //{
+           
+        //    return Json(false);
+        //}
+
         public IActionResult Privacy()
         {
 
