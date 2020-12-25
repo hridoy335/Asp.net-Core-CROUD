@@ -1,5 +1,14 @@
 {
   "version": "1.0",
   "defaultProvider": "cdnjs",
-  "libraries": []
+  "libraries": [
+    {
+      "library": "jquery@3.5.1",
+      "destination": "wwwroot/jquery/"
+    },
+    {
+      "library": "angular.js@1.8.2",
+      "destination": "wwwroot/angular.js/"
+    }
+  ]
 }
